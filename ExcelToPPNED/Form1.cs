@@ -17,8 +17,26 @@ namespace ExcelToPPNED
         public FormMain()
         {
             InitializeComponent();
+
             cBoxCvartal.SelectedIndex = 0;
             tbYear.Text = DateTime.Now.Year.ToString();
+            try
+            {
+
+                tbUNN.Text = Properties.Settings.Default.UNN;
+                nFam.Value = Properties.Settings.Default.Famalija;
+                nName.Value = Properties.Settings.Default.Imja;
+                nfathername.Value = Properties.Settings.Default.Otchestvo;
+                ndateStart.Value = Properties.Settings.Default.Date_Start;
+                nDateEnd.Value = Properties.Settings.Default.Date_End;
+                nIdPasp.Value = Properties.Settings.Default.ID_Passport;
+            }
+            catch(Exception ex) 
+            { 
+                MessageBox.Show(ex.Message);
+            };
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,8 +45,8 @@ namespace ExcelToPPNED
             
             
                 Microsoft.Office.Interop.Excel.Application ObjExcel = new Microsoft.Office.Interop.Excel.Application();
-                Microsoft.Office.Interop.Excel.Workbook ObjWorkBook = ObjExcel.Workbooks.Open(tbFile.Text);
-                Microsoft.Office.Interop.Excel.Worksheet ObjWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)ObjWorkBook.Sheets[1];
+                Workbook ObjWorkBook = ObjExcel.Workbooks.Open(tbFile.Text);
+                Worksheet ObjWorkSheet = (Worksheet)ObjWorkBook.Sheets[1];
                 try
                 {
 

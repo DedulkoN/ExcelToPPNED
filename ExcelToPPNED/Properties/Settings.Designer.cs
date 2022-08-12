@@ -22,5 +22,89 @@ namespace ExcelToPPNED.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200166687")]
+        public string UNN {
+            get {
+                return ((string)(this["UNN"]));
+            }
+            set {
+                this["UNN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int Famalija {
+            get {
+                return ((int)(this["Famalija"]));
+            }
+            set {
+                this["Famalija"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int Imja {
+            get {
+                return ((int)(this["Imja"]));
+            }
+            set {
+                this["Imja"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4")]
+        public int Otchestvo {
+            get {
+                return ((int)(this["Otchestvo"]));
+            }
+            set {
+                this["Otchestvo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public int Date_Start {
+            get {
+                return ((int)(this["Date_Start"]));
+            }
+            set {
+                this["Date_Start"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("7")]
+        public int Date_End {
+            get {
+                return ((int)(this["Date_End"]));
+            }
+            set {
+                this["Date_End"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("37")]
+        public int ID_Passport {
+            get {
+                return ((int)(this["ID_Passport"]));
+            }
+            set {
+                this["ID_Passport"] = value;
+            }
+        }
     }
 }
