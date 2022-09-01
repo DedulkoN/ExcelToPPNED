@@ -6,5 +6,5 @@
 
 
 ###English
-A program for converting MS Excel files into a format intended for uploading to the [program for preparing and sending electronic documents] (https://www.gb.by/novosti/ekonomika/sozdana-novaya-versiya-po-dlya-napolneni)
+A program for converting MS Excel files into a format intended for uploading to the [program for preparing and sending electronic documents](https://www.gb.by/novosti/ekonomika/sozdana-novaya-versiya-po-dlya-napolneni)
 PPNED is designed to process and send data on persons employed in the economy (implementation of Decree No. 3 of April 2, 2015 “On the Prevention of Social Dependency”)
